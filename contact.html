@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body,
+        h1,
+        p,
+        input,
+        button {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin-top: -80px;
+        }
+        
+        .card {
+            background-color: #c092e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 400px;
+        }
+        
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1.5px solid #2a0247;
+            border-radius: 4px;
+            resize: none;
+        }
+        
+        form button {
+            background-color: #5e337c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">|Flower Stor|</a>
+
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="flower.html">Flowers</a>
+            <a href="Review.html">Review</a>
+            <a href="about.html">about Us</a>
+            <a href="memb.html">Memb</a>
+            <a href="info.html">Info</a>
+            <a href="contact.html">contact Us</a>
+
+        </nav>
+
+
+    </header><br><br><br><br>
+    <section class="contact">
+
+        <h1 class="heading"> Contact us </h1>
+        <div class="container">
+            <div class="card">
+                <h1 style="margin-bottom: 10px;">Contact Us</h1>
+                <form>
+                    <input type="text" placeholder="Your Name" pattern="[A-Za-z\s]+" title="Please enter a valid name (letters only)" required>
+                    <input type="email" placeholder="Your Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Please enter a valid email address" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
